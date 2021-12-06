@@ -1,3 +1,6 @@
+# https://adventofcode.com/2021/day/4
+# --- Day 4: Giant Squid - Part 2 ---
+
 num_order = [*map(int, input().split(","))]
 boards = []
 boards_left = []
