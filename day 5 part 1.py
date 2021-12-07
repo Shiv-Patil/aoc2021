@@ -41,6 +41,6 @@ while inp := input():
 points = {}
 for line in lines:
     for point in line:
-        points[point] = 1 if points.get(point, None) is None else points.get(point) + 1
+        points[point] = points.get(point, 0) + 1
 
-print("***", len(dict(filter(lambda item: item[1] >= 2, points.items()))), "***")
+print("***", sum(i > 1 for i in points.values()), "***")
