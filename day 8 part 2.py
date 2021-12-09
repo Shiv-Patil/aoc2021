@@ -31,7 +31,7 @@ for entry in entries:
 
     new_segments = {a.pop(): "a", b.pop(): "b", c.pop(): "c",  d.pop(): "d", e.pop(): "e", f.pop(): "f", g.pop(): "g"}
     # ^ (key: value) = (new_segment: old_segment)
-
+    print(new_segments)
     digits = ""
     for digit in entry[1]:
         digits += str(original_segments.index(''.join(sorted(map(lambda x: new_segments[x], digit)))))
