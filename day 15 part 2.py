@@ -27,7 +27,7 @@ while len(caves) and running:
     adjacent = (*filter(lambda el: rows > el[0] >= 0 and cols > el[1] >= 0, adjacent),)
     for row, col in adjacent:
         if row == rows - 1 and col == cols - 1:
-            cost += int(grid[row][col])
+            cost += grid[row][col]
             running = False
             break
         if (row, col) not in visited:
